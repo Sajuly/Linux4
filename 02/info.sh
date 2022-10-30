@@ -52,7 +52,7 @@ net_mesta
             net_mesta
 
             sudo fallocate -l $p3 ""$folder_random"/"$folder"_"$log_date"/"$file_name"."$file_ext"_"$log_date"" 2>/dev/null
-            line=""$new_date" | "$folder_random"/"$folder"_"$new_date"/"$file_name"."$file_ext"_"$log_date" | Размер файла = ${p3}";
+            line=""$new_date" | "$folder_random"/"$folder"_"$log_date"/"$file_name"."$file_ext"_"$log_date" | Размер файла = ${p3}";
             echo "$line" | sudo tee -a $inputFile
             file_name+="$(echo $last_name_files)"
         done
